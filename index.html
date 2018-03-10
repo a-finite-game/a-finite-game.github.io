@@ -15,6 +15,12 @@ ol {
 }
 li {
 	list-style: none;
+	border-bottom: 1px solid #ddd;
+	height: 40px;
+	line-height: 40px;
+}
+li:last-child {
+	border-bottom: none;
 }
 li a {
 	color: #000;
@@ -24,6 +30,12 @@ li a {
 li a:hover {
 	text-decoration: underline;
 	font-style: italic;
+}
+li.disable a,
+li.disable a:hover {
+	color: #999;
+	text-decoration: none;
+	font-style: normal;
 }
 h1 {
 	border-bottom: 1px solid #ddd;
@@ -49,6 +61,7 @@ h1 {
 	<img src="assets/quote-a-finite-game-is-played-for-the-purpose-of-winning-an-infinite-game-for-the-purpose-james-p-carse-44-75-75.jpg" />
 	<h1>有限的游戏</h1>
 	<ol>
+	  <li class="disable"><a>#2 货币生产的理论</a></li>
 	  <li><a href="pdfs/1.pdf">#1 周其仁「汇率评论」笔记</a></li>
 	</ol>
 	</div>
